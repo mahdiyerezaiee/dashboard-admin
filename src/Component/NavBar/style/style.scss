@@ -1,0 +1,37 @@
+.header {
+  margin-top: 2rem;
+
+  .name {
+    font-weight: bolder;
+  }
+
+  input {
+    width: 320px;
+    height: 48px;
+    padding-right: 10px;
+
+    border-radius: 12px;
+    background: #FBFBFB;
+
+  }
+
+}
+
+.box {
+  span {
+
+    padding-right: 1.8rem;
+
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+
+  .img-box {
+    margin: auto;
+    display: inline;
+  }
+}

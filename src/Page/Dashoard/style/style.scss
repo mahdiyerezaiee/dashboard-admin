@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "irsansb";
+  src: url("./font/irsans.woff") format("woff") ;
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "irsansb" !important;
+  margin: 0;
+  background: #F7F8FA;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: larger;
+
+  &:before {
+    display: inline-flex;
+    content: '';
+    background: url("./img/img.png");
+    background-size: 21px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 25px;
+    background-position: bottom;
+  }
+}
+hr{
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 2rem;
+}
+.main-layout{
+  height: calc(100vh - 100px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+padding-bottom: 80px
+}
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  /*background: rgba(115, 0, 0, 0.17);        !* color of the tracking area *!*/
+}
+
+body::-webkit-scrollbar-thumb {
+  /*background-color: rgb(103, 90, 90);    !* color of the scroll thumb *!*/
+  /*border-radius: 20px;       !* roundness of the scroll thumb *!*/
+}
+.scrollbar{
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /*background-color: rgb(13, 44, 131);    !* color of the scroll thumb *!*/
+  /*border-radius: 20px;       !* roundness of the scroll thumb *!*/
+}
+.scrollbar::-webkit-scrollbar-track {
+  /*background: #0d2c83;        !* color of the tracking area *!*/
+}
+@keyframes scroll {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity: 1;  }
+}
+*::-webkit-scrollbar
+{
+  width: 10px;
+  /*background: #f1f1f1;*/
+  border-radius: 10px
+
+}
+
+*::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background: rgba(136, 136, 136, 0.43);
+  opacity: 0;
+  visibility: hidden;
+
+
+}
+
+*:hover
+*::-webkit-scrollbar-thumb{
+  opacity: 1;
+  transition: visibility 2s ease-in-out;
+  visibility: visible;
+
+}
+*::-webkit-scrollbar-thumb:hover
+{
+  /*border-radius: 10px;*/
+  background: rgba(136, 136, 136, 0.43);
+}
+.apexcharts-tooltip {
+  background: #ffffff;
+  color: black;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+  box-shadow: none!important;
+}

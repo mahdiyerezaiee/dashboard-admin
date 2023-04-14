@@ -1,0 +1,144 @@
+$small: 300px;
+$medium: 900px;
+$PrimaryBlue: #298FFE;
+
+.logo{
+  @media screen and (min-width: $small) {
+    background-image: url("./img/zimapay-new-logo.svg");
+    width:2rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  @media screen and (min-width: $medium) {
+    background-image: url("./img/zimapay2.svg");
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width:12rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+  }
+}
+.ps-sidebar-root{
+  width: unset!important;
+  min-width: unset!important;
+  border: none!important;
+}
+.ps-sidebar-container{
+  width: 90%;
+
+  position: absolute;
+  height: 100vh!important;
+  left: 0px!important;
+  top: 0px!important;
+  background: #FFFFFF!important;
+  border-radius: 24px 0px 0px 24px!important;
+  @media screen and (max-width: $small) {
+    width: 90px;
+  }
+}
+.ps-menuitem-root {
+  margin: 6px 0;
+  font-size: medium;
+  &:hover{
+border-right:6px solid $PrimaryBlue;
+border-top:5px solid white;
+border-bottom:5px solid white;
+border-left:5px solid white;
+background: none!important;
+    svg{
+      stroke: $PrimaryBlue!important;
+
+    }
+    span{
+      color:$PrimaryBlue ;
+    }
+    .bage {
+
+      fill: $PrimaryBlue!important;
+      stroke: #FFFFFF!important;
+    }
+    }
+  .bage{
+    fill: none;
+    stroke: #606060;
+
+  }
+  svg{
+    stroke: #606060;
+
+
+  }
+
+}
+.ps-menu-label{
+  padding-right: 2rem!important;
+}
+.css-1ytr39x {
+  .ps-menu-button{
+    height: 42px!important;
+    &:hover{
+      background: none!important;
+    }
+  }
+}
+.css-8dyhm6  {
+  .ps-menu-button{
+    &:hover{
+      background: none!important;
+    }
+  }
+}
+.css-1fsp9zp{
+  &:hover{
+    border: none!important;
+    color: $PrimaryBlue;
+    background: none!important;
+  }
+}
+.footerSideBar{
+  color: #606060;
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px;
+  gap: 24px;
+  isolation: isolate;
+margin: auto;
+  position: absolute;
+  width: 73%;
+  height: fit-content;
+  left: 34px;
+  background:url("./img/img.png");
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  button{
+    margin:auto;
+    width: 60%;
+    height: 3rem;
+    background: $PrimaryBlue;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+&:hover{
+  color: $PrimaryBlue;
+  border: 1px solid $PrimaryBlue;
+}
+  }
+  div{
+    margin:auto
+  }
+}

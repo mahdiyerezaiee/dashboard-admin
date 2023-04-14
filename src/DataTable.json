@@ -1,0 +1,43 @@
+[
+  {
+    "_id": "1",
+    "name": "دلار",
+    "creatDate": "10/1/1401",
+
+    "ProfitAndloss": "+1500",
+    "balanceRial": "600,000",
+    "balanceCurrency": "280,54",
+    "icon": " ../img/img_6.png"
+  },
+  {
+    "_id": "2",
+    "name": "یورو",
+    "creatDate": "10/1/1401",
+
+    "ProfitAndloss": "-1000",
+    "balanceRial": "400",
+    "balanceCurrency": "280,54",
+    "icon": "../img/img_7.png"
+  },
+  {
+    "_id": "3",
+    "creatDate": "10/1/1401",
+
+
+    "name": "لیر",
+    "ProfitAndloss": "-1000",
+    "balanceRial": "8000",
+    "balanceCurrency": "280,54",
+    "icon": "../img/img_8.png"
+  },
+  {
+    "_id": "4",
+    "creatDate": "10/1/1401",
+    "name": "پوند",
+    "ProfitAndloss": "+1500",
+    "balanceRial": "8000",
+    "balanceCurrency": "280,54",
+    "icon": "../img/img_9.png"
+  }
+
+]

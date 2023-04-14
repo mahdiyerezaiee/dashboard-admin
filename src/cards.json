@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "1",
+    "name": "دلار",
+    "price": "5,780,13",
+    "unitPrice": "USD",
+    "shaba": "IRR1 818,371,097",
+    "backgroundColor": " url(../img/img.png)"
+  },
+  {
+    "_id": "2",
+    "name": "پوند",
+    "price": "5,780,13",
+    "unitPrice": "USD",
+    "shaba": "IRR1 818,371,097",
+    "backgroundColor": "url(../img/img_2.png)"
+  },
+  {
+    "_id": "3",
+    "name": "ریال",
+    "price": "5,780,13",
+    "unitPrice": "USD",
+    "shaba": "IRR1 818,371,097",
+    "backgroundColor": "url(../img/img.png)"
+  }
+
+]
