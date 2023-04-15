@@ -1,21 +1,29 @@
-$small: 300px;
-$medium: 900px;
+$small: 600px;
+$medium: 1200px;
 $PrimaryBlue: #298FFE;
 
 .logo{
-  @media screen and (min-width: $small) {
+  background-image: url("./img/zimapay2.svg");
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width:12rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  @media screen and (max-width: $small) {
     background-image: url("./img/zimapay-new-logo.svg");
-    width:2rem;
-    height: 3rem;
+    background-size: contain;
+    width:50px;
+    height: 50px;
     background-repeat: no-repeat;
     margin-top: 1rem;
     margin-right: 1rem;
   }
-  @media screen and (min-width: $medium) {
+  @media screen and (max-width: $medium) {
     background-image: url("./img/zimapay2.svg");
+    background-size: 7rem 4rem;
     margin-top: 1rem;
     margin-right: 1rem;
-    width:12rem;
+    width:8rem;
     height: 4rem;
     background-repeat: no-repeat;
   }
@@ -24,23 +32,32 @@ $PrimaryBlue: #298FFE;
   width: unset!important;
   min-width: unset!important;
   border: none!important;
+  height: calc(100vh - 100px)!important;
 }
 .ps-sidebar-container{
-  width: 90%;
+  width: 80%;
 
   position: absolute;
-  height: 100vh!important;
+  height: 100vh !important;
   left: 0px!important;
   top: 0px!important;
   background: #FFFFFF!important;
   border-radius: 24px 0px 0px 24px!important;
-  @media screen and (max-width: $small) {
-    width: 90px;
-  }
+
 }
 .ps-menuitem-root {
   margin: 6px 0;
   font-size: medium;
+  @media screen and (max-width: $small) {
+    &:hover{
+      border-right:6px solid $PrimaryBlue;
+      border-top:5px solid white;
+      border-bottom:5px solid white;
+      border-left:5px solid white;
+      background: none!important;
+    }
+  }
+
   &:hover{
 border-right:6px solid $PrimaryBlue;
 border-top:5px solid white;
@@ -109,19 +126,32 @@ margin: auto;
   position: absolute;
   width: 73%;
   height: fit-content;
-  left: 34px;
+  left: 11px;
   background:url("./img/img.png");
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
   border-radius: 16px;
+  @media screen and (max-width: $small) {
+    left: -12px;
+    bottom:100px;
+    box-shadow: none;
+    background:none;
+    gap: 0px
+  }
   span{
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    @media screen and (max-width: $small) {
+      display: none;
+    }
   }
   p{
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
+    @media screen and (max-width: $small) {
+      display: none;
+    }
   }
   button{
     margin:auto;
@@ -133,12 +163,19 @@ margin: auto;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
+    @media screen and (max-width: $small) {
+      left: -2px;
+      font-size: 8px;
+    }
 &:hover{
   color: $PrimaryBlue;
   border: 1px solid $PrimaryBlue;
 }
   }
   div{
-    margin:auto
+    margin:auto;
+    @media screen and (max-width: $small) {
+  margin-right: -17px;
+  }
   }
 }

@@ -69,10 +69,10 @@ const Card = () => {
     return (
         <div className="container">
             <Grid container>
-                <Grid xs={8} md={8}>
+                <Grid item xs={7} md={8}>
                     <span className="title"> کیف پول های من</span>
                 </Grid>
-                <Grid xs={4} md={4} textAlign="left">
+                <Grid item xs={5} md={4} textAlign="left">
                     <button className="buttons next">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" clipRule="evenodd"
@@ -98,18 +98,27 @@ const Card = () => {
                 <ul className="card-list">
 
                     {cards.map(item =>
-                        <li className="card" style={{backgroundImage: item.backgroundColor}}>
+                        <li key={item._id} className="card" style={{backgroundImage: item.backgroundColor}}>
                             <Grid container>
-                                <Grid xs={8} md={6} textAlign="right">
+                                <Grid item xs={8} md={6} textAlign="right">
                                     <span>  {item.name} </span>
                                 </Grid>
-                                <Grid xs={4} md={6} textAlign="left">
+                                <Grid item xs={4} md={6} textAlign="left">
                                     <span className="logo"></span>
                                 </Grid>
-                                <Grid xs={8} md={6} textAlign="right">
-                                </Grid>
-                                <Grid xs={4} md={6} textAlign="left">
+
+                                <Grid item xs={12} md={12} textAlign="left">
                                     <span className="price">  {item.unitPrice + item.price} </span>
+                                </Grid>
+                                </Grid>
+                                <Grid container>
+                                <Grid item xs={6} md={6} textAlign="left">
+                                    <span className="shaba">
+                                                                           {item.shaba}
+
+                                    </span>
+                                </Grid>
+                                <Grid item xs={6} md={6} textAlign="">
                                 </Grid>
                             </Grid>
                         </li>

@@ -6,11 +6,11 @@ import DashboardMain from "../../Component/Dashboard/component/main";
 
 const Index = () => {
     return (
-        <Grid container>
-            <Grid item xs={2} md={3}>
+        <Grid container spacing={1}>
+            <Grid item xs={3} md={3}>
                 <SidebarDashbord/>
             </Grid>
-            <Grid item xs={10} md={9}>
+            <Grid item xs={9} md={9}>
                 <Header/>
                 <DashboardMain/>
             </Grid>

@@ -221,6 +221,6 @@ const LineChart = () => {
         },
 
     }
-    return <Chart type="line" series={series} options={options} />;
+    return <Chart type="line" series={series} options={options} width={ "100%"}/>;
 }
 export default LineChart

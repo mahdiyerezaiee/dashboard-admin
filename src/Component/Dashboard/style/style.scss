@@ -2,12 +2,14 @@
 $default-diff:  12px;
 $default-width: 100%;
 $default-min: 10%;
-
+$small: 600px;
+$medium: 1200px;
 
 .weight{
   background: #FFFFFF;
   border-radius: 22px;
   padding: 1rem;
+  margin: 1%;
 }
 
 
@@ -61,20 +63,43 @@ color: white;
           font-size: large;
         }
         .logo{
+          position: relative;
+          top: -80%;
+          left: 3px;
           padding-right: 40%;
 background-image: url("./img/img.png");
-          background-size: 27px;
+          background-size: 2rem;
           background-repeat: no-repeat;
           height: 27px;
           width: 25px;
           background-position: bottom;
-
+          @media screen and (max-width: $small) {
+            left:20%;
+            top: -40%;
+          }
         }
         .price{
           position: relative;
-          bottom: -97px;
+          bottom: -100%;
           left: 3px;
+          padding: 9%;
+          @media screen and (max-width: $small) {
 
+            font-size: small;
+          }
+        }
+        .shaba{
+          position: relative;
+          bottom:-170%;
+          left: -80%;
+          padding: 0;
+          font-size: 80%;
+          @media screen and (max-width: $small) {
+            bottom: -50px;
+            left: -111px;
+            font-size: 14px;
+
+          }
         }
         &:nth-child(1) {
           top: ($default-diff * 3);
@@ -223,22 +248,31 @@ border-bottom:1px solid #ccc ;
 .curve{
   margin-top: 2rem;
   color: white;
-  border-radius: 21px 150px 21px 21px  ;
-padding: 4rem;
-  height: 20%;
+  border-radius: 31px 500px 31px 31px;
+  padding: 4rem;
+  height: 40px;
+  font-size: small;
   text-align: center;
+
+  @media screen and (max-width: $medium) {
+    padding: 2rem;
+  }
+
   div{
     padding-bottom: 1rem;
   }
 }
 .green{
   background-color: #3AE5B2;
+
 }
 .pink{
   background-color: #FF55BB;
+
 }
 .blue{
   background-color: #298FFE;
+
 }
 .bg-blue{
   border-radius: 21px;

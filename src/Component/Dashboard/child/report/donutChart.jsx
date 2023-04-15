@@ -10,15 +10,32 @@ const DonutChart = () => {
             show: false
         }
         ,
+
+        crosshairs: {
+            show: false,
+            position: 'back',
+            stroke: {
+                color: '#b6b6b6',
+                width: 1,
+                dashArray: 0,
+            },
+        },
         plotOptions: {
             pie:   {
                 expandOnClick: false,
                 donut: {
             labels: {
                 show: true,
+
+
+
+
+
                     total: {
                     show: true,
+                        showAlways: true,
                         label: 'جمع دارایی (ریال)',
+                        fontSize:"80%",
                         formatter: () => "280,54"
 
                 }
@@ -43,7 +60,7 @@ const DonutChart = () => {
 
     return (
         <div className="donut">
-            <Chart options={options} series={series} type="donut"  width="400 "/>
+            <Chart options={options} series={series} type="donut"  width="100%"/>
         </div>
     );
 }

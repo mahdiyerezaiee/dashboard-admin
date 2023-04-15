@@ -1,23 +1,45 @@
-@font-face {
-  font-family: "irsansb";
-  src: url("./font/irsans.woff") format("woff") ;
+$small: 600px;
+$medium: 900px;
 
+@font-face {
+  font-family: "diroz";
+  src: url("./fonts/Dirooz-FD.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Dirooz-FD.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/Dirooz-FD.otf") format("opentype"), /* Open Type Font */
+  url("./fonts/Dirooz-FD.svg") format("svg"), /* Legacy iOS */
+  url("./fonts/Dirooz-FD.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("./fonts/Dirooz-FD.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/Dirooz-FD.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
+text{
+  font-family: "diroz" !important;
+
+}
 
 body {
-  font-family: "irsansb" !important;
+  font-family: "diroz" !important;
   margin: 0;
   background: #F7F8FA;
   direction: rtl;
   overflow: hidden;
+  width: 100vw!important;
 }
+.MuiTableCell-root{
+  font-family: "diroz" !important;
 
+}
+.MuiTableCell-body{
+  font-family: "diroz" !important;
+
+}
 .title {
   font-weight: bolder;
   font-size: larger;
-
+  @media screen and (max-width: $small) {
+    font-size: 15px;
+  }
   &:before {
     display: inline-flex;
     content: '';
@@ -36,7 +58,7 @@ hr{
   margin: 2rem;
 }
 .main-layout{
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   overflow-x: hidden;
   overflow-y: scroll;
 padding-bottom: 80px

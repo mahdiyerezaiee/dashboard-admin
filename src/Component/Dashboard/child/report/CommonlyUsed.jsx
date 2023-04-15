@@ -4,7 +4,7 @@ import "../../style/style.scss"
 const CommonlyUsed = () => {
     return(
         <Grid container spacing={2}>
-            <Grid xs={12} md={12} paddingTop={4}>
+            <Grid item  xs={12} md={12} paddingTop={4}>
                 <span className="title">پرکاربرد ترین ها</span>
             </Grid>
             <Grid item xs={12} md={4} >

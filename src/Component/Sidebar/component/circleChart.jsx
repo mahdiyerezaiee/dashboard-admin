@@ -9,7 +9,7 @@ const CircleChart = () => {
             radialBar: {
                 hollow: {
                     margin: 0,
-                    size: "60%",
+                    size:window.innerWidth < 600 ? "40%" :"60%",
                     background: "none"
                 },
 
@@ -36,6 +36,6 @@ const CircleChart = () => {
         },
         labels: ["80%"]
     };
-    return <Chart type="radialBar" series={series} options={options} width={144}/>;
+    return <Chart type="radialBar" series={series} options={options}  width={window.innerWidth < 600 ? "130px" :"144px"}/>;
 }
 export default CircleChart

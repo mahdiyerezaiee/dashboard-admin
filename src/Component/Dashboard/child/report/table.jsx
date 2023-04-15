@@ -9,10 +9,10 @@ import Paper from '@mui/material/Paper';
 import rows from "../../../../DataTable.json"
 import { styled } from '@mui/material/styles';
 
-const StyledTableCell = styled(TableCell)(({  ProfitAndloss }) => ({
+const StyledTableCell = styled(TableCell)(({  status }) => ({
 
     [`&.${tableCellClasses.body}`]: {
-        color: ProfitAndloss > 0 ? "green" : "red",
+        color: status === "Profit" ? "green" : "red",
     },
 }));
 
@@ -33,7 +33,7 @@ export default function BasicTable() {
                 <TableBody>
                     {rows.map((row) => (
                         <TableRow
-                            key={row.name}
+                            key={row._id}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                             <TableCell align="right"><img src={row.icon}/>  {" "}  {row.name} {" "} </TableCell>
@@ -41,7 +41,7 @@ export default function BasicTable() {
                             <TableCell component="th" scope="row">
 
                             </TableCell>
-                            <StyledTableCell align="center" ProfitAndloss={row.ProfitAndloss}>{row.ProfitAndloss}</StyledTableCell>
+                            <StyledTableCell align="center" status={row.status}>{row.ProfitAndloss}</StyledTableCell>
                             <TableCell align="center">{row.balanceCurrency}</TableCell>
                             <TableCell align="center">{row.balanceRial}</TableCell>
                         </TableRow>
