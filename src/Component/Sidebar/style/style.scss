@@ -1,5 +1,5 @@
 $small: 600px;
-$medium: 1200px;
+$medium: 900px;
 $PrimaryBlue: #298FFE;
 
 .logo{
@@ -18,7 +18,7 @@ $PrimaryBlue: #298FFE;
     margin-top: 1rem;
     margin-right: 1rem;
   }
-  @media screen and (max-width: $medium) {
+  @media screen and (min-width: $medium) {
     background-image: url("./img/zimapay2.svg");
     background-size: 7rem 4rem;
     margin-top: 1rem;
@@ -132,7 +132,7 @@ margin: auto;
   border-radius: 16px;
   @media screen and (max-width: $small) {
     left: -12px;
-    bottom:100px;
+    top:60%;
     box-shadow: none;
     background:none;
     gap: 0px

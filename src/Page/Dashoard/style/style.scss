@@ -40,6 +40,9 @@ body {
   @media screen and (max-width: $small) {
     font-size: 15px;
   }
+  @media screen and (min-width: $medium) {
+    font-size: 14px;
+  }
   &:before {
     display: inline-flex;
     content: '';
