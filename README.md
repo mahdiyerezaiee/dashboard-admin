@@ -1,4 +1,4 @@
-# Zimapay Test
+# Dashboard Admin
 
 The repository contains the code for the Zimapay Test, a front-end of a web application for managing users and their transactions.
 
